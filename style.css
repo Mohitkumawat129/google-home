@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.span {
+  display: flex;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: navajowhite;
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.container h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: cursive;
+}
+.inputField1 {
+  display: none;
+}
+.inputField {
+  margin-top: 3vh;
+  width: 12.5vw;
+  display: flex;
+  align-items: center;
+  border-radius: 5rem;
+  background: white;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  transition: 2s;
+}
+.inputField input {
+  width: 100%;
+  height: 5rem;
+  border-radius: 2.5rem;
+  background: transparent;
+  font-size: 2rem;
+  border: 0;
+  outline: none;
+}
+.inputField i:nth-of-type(1) {
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 25px;
+}
+.inputField i:nth-of-type(2) {
+  font-size: 2rem;
+  padding: 1.5rem;
+  transition: all 1s;
+  display: none;
+}
+.style1 {
+  width: 45vw;
+}
+/* .style2 {
+  display: flex;
+} */
+.shortCuts div {
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shortCuts img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.shortCuts div:hover {
+  background-color: gray;
+}
+.shortCuts {
+  margin-top: 8vh;
+  width: 40vw;
+  height: 35vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 5.5rem 7.5rem;
+}
+@media (max-width: 400px) {
+  .shortCuts {
+    display: none;
+  }
+  .container h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: cursive;
+  }
+  .inputField {
+    display: none;
+  }
+  .inputField1 {
+    margin-top: 3vh;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    background: white;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.1),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  }
+  .inputField1 input {
+    width: 100%;
+    height: 3rem;
+    border-radius: 2.5rem;
+    background: transparent;
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+  }
+  .inputField1 i:nth-of-type(1) {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .inputField1 i:nth-of-type(2) {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
